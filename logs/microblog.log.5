@@ -1,0 +1,92 @@
+2018-02-05 11:52:05,733 ERROR: Exception on /index [GET] [in /Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/justencracraft/source/python/microblog/app/routes.py", line 38, in index
+    return render_template('index.html', title='Home', posts=posts)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/justencracraft/source/python/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/justencracraft/source/python/microblog/app/templates/base.html", line 25, in top-level template code
+    {% endif %} {% endwith %} {% block content %}{% endblock %}
+  File "/Users/justencracraft/source/python/microblog/app/templates/index.html", line 5, in block "content"
+    {{ form.hidden_tag() }}
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-02-05 11:58:32,834 ERROR: Exception on /index [GET] [in /Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/justencracraft/source/python/microblog/app/routes.py", line 38, in index
+    ]
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/justencracraft/source/python/microblog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %} {% block content %}
+  File "/Users/justencracraft/source/python/microblog/app/templates/base.html", line 25, in top-level template code
+    {% endif %} {% endwith %} {% block content %}{% endblock %}
+  File "/Users/justencracraft/source/python/microblog/app/templates/index.html", line 5, in block "content"
+    <p>
+  File "/Users/justencracraft/source/python/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-02-05 11:58:38,317 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:42]
+2018-02-05 12:06:57,506 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:42]
+2018-02-05 12:15:34,637 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:42]
+2018-02-05 15:05:34,043 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:42]
+2018-02-05 15:10:22,115 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:42]
+2018-02-12 12:54:41,041 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:42]
+2018-02-12 12:55:27,793 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:44]
+2018-02-14 12:38:09,684 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:44]
+2018-02-14 12:41:23,028 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:44]
+2018-02-14 12:46:38,971 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:44]
+2018-02-22 12:13:47,363 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:46]
+2018-02-22 12:16:41,316 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:46]
+2018-02-22 12:16:56,677 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:46]
+2018-02-22 12:17:58,472 INFO: Microblog startup [in /Users/justencracraft/source/python/microblog/app/__init__.py:46]
